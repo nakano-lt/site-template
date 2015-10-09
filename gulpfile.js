@@ -46,7 +46,10 @@ gulp.task('imagemin', function() {
 var fs = require('fs');
 var json = JSON.parse(fs.readFileSync("site.json")); // parse json
 var talks = JSON.parse(fs.readFileSync("talks.json")); // parse json
+var event = JSON.parse(fs.readFileSync("event.json")); // parse json
 json.talks = talks;
+json.event = event;
+json.siteName = event.title + " #" + event.times;
 gulp.task("ejs", function() {
     gulp.src(['templates/*.ejs','!' + 'templates/_*.ejs']) // Don't build html which starts from underline
         .pipe(plumber())
