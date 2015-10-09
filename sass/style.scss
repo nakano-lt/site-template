@@ -29,6 +29,7 @@ body {
     margin: .5em 0 .3em;
 
     @media #{$mq-sm} {
+      margin: 0px;
       font-size: 400%;
     }
   }
@@ -37,6 +38,10 @@ body {
     color: $bg;
     border-color: $bg;
     margin: 0 10px;
+
+    @media #{$mq-sm} {
+      margin-top: 16px;
+    }
   }
   span {
     font-family: mplus-1c-medium;
@@ -60,4 +65,8 @@ h2 {
 
 .header-content {
   margin: 4em 0 2em;
+
+  @media #{$mq-sm} {
+    margin: 0;
+  }
 }
