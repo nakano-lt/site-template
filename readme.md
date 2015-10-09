@@ -1,8 +1,8 @@
-# Rin 4
+# Site template
 
-A lean, gulp-based HTML & SASS boilerplate for better front-end coding.
+A lean, gulp-based HTML & SASS boilerplate for better front-end coding of nakano_lt.
 
-<http://sanographix.github.io/rin/>
+Based on: <http://sanographix.github.io/rin/> (Thanks!!!!)
 
 # Getting Started
 
@@ -20,17 +20,21 @@ A lean, gulp-based HTML & SASS boilerplate for better front-end coding.
 
     $ npm install -g gulp
 
-#### 2) Clone Rin:
+#### 2) Fork this and rename that:
 
-    $ git clone git@github.com:sanographix/rin.git test-repo
-    $ cd test-repo
+#### 3) Clone the repo:
+
+    $ git clone...
+    $ cd ...
     $ npm install
 
-#### 3) Run gulp:
+#### 4) Run gulp:
 
     $ gulp
 
-#### 4) :tada:
+#### 4) Edit event.json, site.json, talks.json
+
+#### 5) :tada:
 
 <hr/>
 
@@ -213,6 +217,13 @@ Rin runs local server by using [BrowserSync](http://www.browsersync.io/). Its de
 
 # Author
 
+### mactkg
+
+Student from Tokyo.
+
+- <http://makerbox.net/>
+- Twitter: [@mactkg](http://twitter.com/mactkg/)
+
 ### Showkaku Sano (sanographix)
 
 Graphic designer from Kyoto.
@@ -224,6 +235,7 @@ Graphic designer from Kyoto.
 
 ### Major components:
 
+* Rin4: MIT license
 * jQuery: MIT/GPL license
 * Normalize.css: Public Domain
 * html5shiv: MIT/GPL license
