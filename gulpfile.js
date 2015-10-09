@@ -43,14 +43,15 @@ gulp.task('imagemin', function() {
 
 // ejs
 
-var fs = require('fs');
-var json = JSON.parse(fs.readFileSync("site.json")); // parse json
-var talks = JSON.parse(fs.readFileSync("talks.json")); // parse json
-var event = JSON.parse(fs.readFileSync("event.json")); // parse json
-json.talks = talks;
-json.event = event;
-json.siteName = event.title + " #" + event.times;
 gulp.task("ejs", function() {
+    var fs = require('fs');
+    var json = JSON.parse(fs.readFileSync("site.json"));
+    var talks = JSON.parse(fs.readFileSync("talks.json"));
+    var event = JSON.parse(fs.readFileSync("event.json"));
+    json.talks = talks;
+    json.event = event;
+    json.siteName = event.title + " #" + event.times;
+
     gulp.src(['templates/*.ejs','!' + 'templates/_*.ejs']) // Don't build html which starts from underline
         .pipe(plumber())
         .pipe(ejs(json))
@@ -81,5 +82,5 @@ gulp.task('default',['browser-sync'], function() {
     gulp.watch('js/*.js',['js']);
     gulp.watch('images/**/*.{png,jpg,gif,svg}',['imagemin']);
     gulp.watch("./*.html", ['bs-reload']);
-    gulp.watch(['templates/*.ejs', 'site.json'], ['ejs']);
+    gulp.watch(['templates/*.ejs', 'site.json', 'event.json', 'talks.json'], ['ejs']);
 });
