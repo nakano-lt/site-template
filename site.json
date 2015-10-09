@@ -1,8 +1,11 @@
 {
-  "siteName": "Example Site",
-  "siteRootUrl": "http://example.com/",
+  "siteName": "Nakano.LT #004",
+  "siteDescription": "A Nakano-based \"lightning talk\" event",
+  "siteRootUrl": "http://nakano-lt.github.com/",
   "ogImageUrl": "http://example.com/images/og-image.jpg",
   "fbAppId": "",
   "twitterSite": "",
-  "googleAnalyticsId": ""
+  "googleAnalyticsId": "",
+  "supporter": "NakanoComputerClub",
+  "supporterUrl": "https://github.com/post-internet"
 }

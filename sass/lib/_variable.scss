@@ -5,11 +5,13 @@ $bg: #fff; // Background color
 $base: #444; // Base text color
 $light: #999; // Light text color
 
-$link: #37aed5; // Link text color
+$link: $md-amber-500; // Link text color
 $hover: darken($link,8%); // Link text color(hover)
 
 $border: #ddd; // Border color
 
+$table-border-outline: $md-grey-900;
+$table-border-inner: $md-grey-500;
 
 // Media Queries - Breakpoints
 
